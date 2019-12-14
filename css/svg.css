@@ -8,3 +8,42 @@ main{
   height: 720px;
   margin: 0 auto;
 }
+
+.living-locker{
+  animation: move 0.5s ease infinite;
+}
+
+#story{
+  display: none;
+}
+
+#circlePlay{
+  cursor: pointer;
+}
+
+#circlePlay:hover{
+  opacity: 0.8;
+}
+
+.openLocker{
+  animation: open 5s ease;
+  transform: translate(80px,-35px);
+}
+
+@keyframes move {
+  25% {
+     transform: translate(10px, 10px);
+  }
+  95% {
+    transform: translate(-10px, -15px);
+  }
+}
+
+@keyframes open {
+  0%{
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(80px,-35px);
+  }
+}
