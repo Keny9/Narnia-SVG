@@ -8,6 +8,7 @@ $(document).ready(function(){
 
 //Initialiser le son
 function initializeAudio(){
+  //Son pour le mouvement su casier BANG
   audio = document.createElement("audio");
   document.body.appendChild(audio);
   audio.src = "./sound/locker.ogg";
@@ -15,11 +16,15 @@ function initializeAudio(){
     this.currentTime = 0;
     this.play();
   }, false);
+
+  //Son pour l'ouverture du casier
+  audioOpenLocker = document.createElement("audio");
+  document.body.appendChild(audio);
+  audioOpenLocker.src = "./sound/open_locker.ogg";
 }
 
 //Commencer la story
 function startScene(){
-  play = true;
   $("#circlePlay").css("display", "none");
   $("#play").remove();
   $("#story").css("display", "block");
@@ -49,4 +54,5 @@ function openLocker(){
   $("#line1").remove();
   $("#line2").remove();
   $("#line3").remove();
+  audioOpenLocker.play();
 }
