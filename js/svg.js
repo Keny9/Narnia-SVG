@@ -32,6 +32,16 @@ function initializeAudio(){
   audioOpenLocker = document.createElement("audio");
   document.body.appendChild(audio);
   audioOpenLocker.src = "./sound/open_locker.ogg";
+
+  //Son pour la transition de scene
+  audioTransit = document.createElement("audio");
+  document.body.appendChild(audioTransit);
+  audioTransit.src = "./sound/magic-effect.mp3";
+
+  //Son pour le personngae (Male-scared-gasp)
+  audioScared = document.createElement("audio");
+  document.body.appendChild(audioScared);
+  audioScared.src = "./sound/male-scared-gasp.mp3";
 }
 
 //Commencer la story
@@ -68,12 +78,25 @@ function openLocker(){
   $("#line3").remove();
   audioOpenLocker.play();
   audioSchool.pause();
-  setTimeout(changeScene, 5000);
+  setTimeout(scaredGuy, 3000);
+}
+
+//Étonnement du personnage
+function scaredGuy(){
+  audioScared.play();
+  setTimeout(changeScene, 3000);
 }
 
 //Changement de scene
 function changeScene(){
+  audioTransit.play();
   $("#schoolScene").addClass("endSchoolScene");
+  setTimeout(startNarniaScene, 5000);
+}
+
+//Nouvelle Scene (Narnia)
+function startNarniaScene(){
+  audioTransit.pause();
 }
 
 //Scène guillaume
