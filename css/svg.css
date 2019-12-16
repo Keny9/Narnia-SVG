@@ -1,4 +1,5 @@
 .background{
+  display: none;
   overflow: hidden;
   z-index:900;
 }
@@ -147,6 +148,11 @@ main{
   animation: endSchool 2s ease;
 }
 
+.startNarniaScene{
+  opacity: 1;
+  animation: startNarnia 2s ease;
+}
+
 @keyframes move {
   25% {
      transform: translate(10px, 10px);
@@ -171,6 +177,15 @@ main{
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes startNarnia {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
