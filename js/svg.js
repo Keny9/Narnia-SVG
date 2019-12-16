@@ -114,9 +114,9 @@ function startNarniaScene(){
 
 function saisons(){
   saisonEte();
-  setTimeout(saisonAutomne, 2000);
-  setTimeout(saisonHiver, 7000);
-  setTimeout(nuit, 12000);
+  setTimeout(saisonAutomne, 5000);
+  setTimeout(saisonHiver, 10000);
+  setTimeout(nuit, 15000);
 }
 
 function saisonEte(){
