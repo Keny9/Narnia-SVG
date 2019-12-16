@@ -41,6 +41,10 @@ function initializeAudio(){
   audioScared = document.createElement("audio");
   document.body.appendChild(audioScared);
   audioScared.src = "./sound/male-scared-gasp.mp3";
+
+  audioNoel = document.createElement("audio");
+  document.body.appendChild(audioNoel);
+  audioNoel.src = "./sound/noel.mp3";
 }
 
 //Commencer la story
@@ -130,6 +134,9 @@ function saisonAutomne(){
   $("#herbe").toggleClass("herbe-automne");
   $("#herbe-ombre").toggleClass("herbe-ombre-automne");
   $("#herbe-droite").toggleClass("herbe-automne");
+
+  //Changer la couleur des feuilles
+  $('#feuilles').toggleClass("feuilles-automne");
 }
 
 function saisonHiver(){
@@ -144,11 +151,29 @@ function saisonHiver(){
   $("#herbe-ombre").toggleClass("herbe-ombre-hiver");
   $("#herbe-droite").toggleClass("herbe-hiver");
 
+  //Changer couleur montagnes
+  $('.mont-pale').each(function() {
+    $(this).toggleClass("montagne-hiver-pale");
+  });
+  $('.mont-fonce').each(function() {
+    $(this).toggleClass("montagne-hiver-fonce");
+  });
+  $('.mont-mid').each(function() {
+    $(this).toggleClass("montagne-hiver-mid");
+  });
+
+  //Changer la couleur des feuilles
+  $('#feuilles').toggleClass("feuilles-hiver");
+
   //Couleur ciel
   $('#ciel').toggleClass("ciel-hiver");
 
+  //Musique de noel pour l'hiver
+  audioNoel.play();
+
 }
 
+//Mettre un effet nuit
 function nuit(){
   $("#paysage").toggleClass("nuit");
   $("#main").toggleClass("nuit");

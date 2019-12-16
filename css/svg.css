@@ -87,10 +87,43 @@ main{
   -moz-filter:  brightness(75%);
 }
 
+.montagne-hiver-pale{
+  fill: #FCFCFC;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.montagne-hiver-fonce{
+  fill: #D1D1D1;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.montagne-hiver-mid{
+  fill: #E6E6E6;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.feuilles-hiver{
+  opacity: 0;
+  transition: all 4s linear;
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+}
+.feuilles-automne{
+  fill: #FCD97B;
+  transition: all 4s linear;
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+}
+
 
 .flocon path{
   fill:#fff;
 }
+
 .flocon-wrapper{
   position:absolute;
   z-index:999;
