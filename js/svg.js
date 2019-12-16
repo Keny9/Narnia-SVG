@@ -14,11 +14,16 @@ $(document).ready(function(){
 
 //Initialiser le son
 function initializeAudio(){
+  //Son ambient dans l'école
+  audioSchool = document.createElement("audio");
+  document.body.appendChild(audioSchool);
+  audioSchool.src = "./sound/ambient-school.mp3";
+
   //Son pour le mouvement su casier BANG
   audio = document.createElement("audio");
   document.body.appendChild(audio);
   audio.src = "./sound/locker.ogg";
-  audio.addEventListener('ended', function() {
+  audio.addEventListener('ended', function() { //Pour loop le son
     this.currentTime = 0;
     this.play();
   }, false);
@@ -34,7 +39,8 @@ function startScene(){
   $("#circlePlay").css("display", "none");
   $("#play").remove();
   $("#story").css("display", "block");
-  setTimeout(livingLocker, 5000);
+  audioSchool.play();
+  setTimeout(livingLocker, 7000);
 }
 
 //Le casier se met en mouvement
@@ -61,6 +67,13 @@ function openLocker(){
   $("#line2").remove();
   $("#line3").remove();
   audioOpenLocker.play();
+  audioSchool.pause();
+  setTimeout(changeScene, 5000);
+}
+
+//Changement de scene
+function changeScene(){
+  $("#schoolScene").addClass("endSchoolScene");
 }
 
 //Scène guillaume
