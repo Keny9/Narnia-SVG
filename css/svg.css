@@ -4,8 +4,7 @@ html, body{
 
 main{
   display: block;
-  position: relative;
-  width: 1280px;
+  width: 1200px;
   height: 720px;
   margin: 0 auto;
 }
