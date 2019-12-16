@@ -1,10 +1,250 @@
+.background{
+  overflow: hidden;
+  z-index:900;
+}
+
 html, body{
   background-color: #000000;
 }
 
 main{
   display: block;
-  width: 1280px;
+  width: 1200px;
   height: 720px;
   margin: 0 auto;
 }
+
+.living-locker{
+  animation: move 0.5s ease infinite;
+}
+
+#story{
+  display: none;
+}
+
+#circlePlay{
+  cursor: pointer;
+}
+
+#circlePlay:hover{
+  opacity: 0.8;
+}
+
+.herbe-ete{
+  fill: #7FCC76;
+}
+.herbe-ombre-ete{
+  fill: #55B56A;
+}
+
+.herbe-automne{
+  fill: #ADD459;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.herbe-ombre-automne{
+  fill: #98BA4E;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.herbe-hiver{
+  fill: #FFFFFF;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.herbe-ombre-hiver{
+  fill: #E3E3E3;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.ciel-ete{
+  fill: #78BDFF ;
+}
+.ciel-hiver{
+  fill: #f9f9f9;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.ciel-nuit{
+  fill: #696969;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.nuit{
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+  -webkit-filter: brightness(75%);
+  -moz-filter:  brightness(75%);
+}
+
+.montagne-hiver-pale{
+  fill: #FCFCFC;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.montagne-hiver-fonce{
+  fill: #D1D1D1;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.montagne-hiver-mid{
+  fill: #E6E6E6;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+
+.flocon path{
+  fill:#fff;
+}
+
+.flocon-wrapper{
+  position:absolute;
+  z-index:999;
+}
+
+@keyframes falling{
+  0%{
+    top:-50px;
+    opacity:1;
+  }
+  50%{
+    opacity:1;
+  }
+  80%{
+    opacity:0;
+  }
+  100%{
+    top:100%;
+    opacity:0;
+  }
+}
+
+.flocon{
+  width:100%;
+  height:100%;
+}
+
+.openLocker{
+  animation: open 5s ease;
+  transform: translate(80px,-35px);
+}
+
+.endSchoolScene{
+  opacity: 0;
+  animation: endSchool 2s ease;
+}
+
+@keyframes move {
+  25% {
+     transform: translate(10px, 10px);
+  }
+  95% {
+    transform: translate(-10px, -15px);
+  }
+}
+
+@keyframes open {
+  0%{
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(80px,-35px);
+  }
+}
+
+@keyframes endSchool {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/*************CSS DU PERSONNAGE **************************/
+#tout{
+  animation-name: corpsFlip;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  transform-origin: 0px 0px;
+  animation-fill-mode: forwards;
+}
+
+  #corps{
+    animation-name: corpsAvance;
+    animation-duration: 7.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    transform-origin: 300px 100px;
+    animation-fill-mode: forwards;
+  }
+
+  #etudiant_bras{
+    animation-name: brasBouge;
+    animation-duration: 1.5s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    transform-origin: 48% 35%;
+  }
+  #jambe_gauche{
+    animation-name: jambeBouge;
+    animation-duration: 1.5s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    transform-origin: 60% 75%;
+  }
+  #jambe_droite{
+    animation-name: jambeDroiteBouge;
+    animation-duration: 1.5s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    transform-origin: 48% 50%;
+  }
+
+  @keyframes corpsFlip {
+    100% {transform:matrix(-0.78007646,0,0,0.71167209);}
+  }
+
+  @keyframes corpsAvance {
+    0% {transform: translate(0);
+        }
+    50% {transform: translate(150px,50px);
+    }
+    100% {transform: translate(300px,100px);
+    }
+  }
+
+  @keyframes brasBouge {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(10deg);}
+    100% {transform: rotate(0);}
+  }
+  @keyframes jambeBouge {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(5deg);}
+    100% {transform: rotate(0);}
+  }
+  @keyframes jambeDroiteBouge {
+    0% {transform: rotate(0);}
+    50% {transform: rotate(5deg);}
+    100% {transform: rotate(0);}
+  }
