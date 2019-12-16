@@ -162,8 +162,6 @@ function saisonHiver(){
   //Couleur ciel
   $('#ciel').toggleClass("ciel-hiver");
 
-  //Changer la couleur des feuilles
-  $('#feuilles').toggleClass("feuilles-hiver");
 }
 
 //Mettre un effet nuit

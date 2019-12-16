@@ -1,4 +1,5 @@
 .background{
+  display: none;
   overflow: hidden;
   z-index:900;
 }
@@ -153,6 +154,16 @@ main{
 .openLocker{
   animation: open 5s ease;
   transform: translate(80px,-35px);
+}
+
+.endSchoolScene{
+  opacity: 0;
+  animation: endSchool 2s ease;
+}
+
+.startNarniaScene{
+  opacity: 1;
+  animation: startNarnia 2s ease;
 }
 
 @keyframes move {
