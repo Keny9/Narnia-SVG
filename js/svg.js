@@ -8,7 +8,7 @@ $(document).ready(function(){
     startScene(); //Lancement de l'histoire
   });
 
-    saisons(); //2ème scène
+
 });
 
 
@@ -98,6 +98,8 @@ function changeScene(){
 function startNarniaScene(){
   audioTransit.pause();
   $("#schoolScene").hide();
+  $("#main").show();
+  saisons(); //2ème scène
 }
 
 //Scène guillaume

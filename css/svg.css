@@ -1,4 +1,5 @@
 .background{
+  display: none;
   overflow: hidden;
   z-index:900;
 }
