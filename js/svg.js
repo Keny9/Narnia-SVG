@@ -8,8 +8,6 @@ $(document).ready(function(){
     startScene(); //Lancement de l'histoire
   });
 
-  // startNarniaScene(); //2ème scène
-
 });
 
 
@@ -18,7 +16,6 @@ function initializeAudio(){
   //Son ambient dans l'école
   audioSchool = document.createElement("audio");
   document.body.appendChild(audioSchool);
-  //Son ecole
   audioSchool.src = "./sound/ambient-school.mp3";
 
   //Son pour le mouvement su casier BANG
@@ -94,13 +91,17 @@ function scaredGuy(){
 function changeScene(){
   audioTransit.play();
   $("#schoolScene").addClass("endSchoolScene");
+  $("#main").addClass("endSchoolScene");
   setTimeout(startNarniaScene, 5000);
 }
 
 //Nouvelle Scene (Narnia)
 function startNarniaScene(){
-  audioTransit.pause();
+  setTimeout(function(){
+    audioTransit.pause();
+  }, 4000);
   $("#schoolScene").hide();
+  $("#main").addClass("startNarniaScene");
   $("#main").show();
   saisons(); //2ème scène
 }
