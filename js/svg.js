@@ -81,6 +81,7 @@ function openLocker(){
   setTimeout(scaredGuy, 3000);
 }
 
+
 //Étonnement du personnage
 function scaredGuy(){
   audioScared.play();

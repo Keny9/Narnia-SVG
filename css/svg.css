@@ -76,7 +76,6 @@ main{
 .flocon path{
   fill:#fff;
 }
-
 .flocon-wrapper{
   position:absolute;
   z-index:999;
@@ -154,18 +153,18 @@ main{
 
   #corps{
     animation-name: corpsAvance;
-    animation-duration: 7.5s;
+    animation-duration: 16s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay: 1s;
-    transform-origin: 300px 100px;
+    transform-origin: 500px 100px;
     animation-fill-mode: forwards;
   }
 
   #etudiant_bras{
     animation-name: brasBouge;
     animation-duration: 1.5s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 12;
     animation-timing-function: linear;
     animation-delay: 1s;
     transform-origin: 48% 35%;
@@ -173,7 +172,7 @@ main{
   #jambe_gauche{
     animation-name: jambeBouge;
     animation-duration: 1.5s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 12;
     animation-timing-function: linear;
     animation-delay: 1s;
     transform-origin: 60% 75%;
@@ -181,7 +180,7 @@ main{
   #jambe_droite{
     animation-name: jambeDroiteBouge;
     animation-duration: 1.5s;
-    animation-iteration-count: 5;
+    animation-iteration-count: 12;
     animation-timing-function: linear;
     animation-delay: 1s;
     transform-origin: 48% 50%;
@@ -194,9 +193,12 @@ main{
   @keyframes corpsAvance {
     0% {transform: translate(0);
         }
-    50% {transform: translate(150px,50px);
+    20% {transform: translate(300px,100px);
     }
-    100% {transform: translate(300px,100px);
+    80% {transform: translate(300px,100px);
+    }
+
+    100% {transform: translate(500px,100px);
     }
   }
 
