@@ -191,27 +191,27 @@ main{
   }
 
   #etudiant_bras{
-    animation-name: brasBouge;
-    animation-duration: 1.5s;
-    animation-iteration-count: 12;
-    animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-name: brasBouge, brasBouge;
+    animation-duration: 1.5s, 1.5s;
+    animation-iteration-count: 3, 2;
+    animation-timing-function: linear, linear;
+    animation-delay: 1s, 14s;
     transform-origin: 48% 35%;
   }
   #jambe_gauche{
-    animation-name: jambeBouge;
-    animation-duration: 1.5s;
-    animation-iteration-count: 12;
-    animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-name: jambeBouge, jambeBouge;
+    animation-duration: 1.5s, 1.5s;
+    animation-iteration-count: 3, 2;
+    animation-timing-function: linear, linear;
+    animation-delay: 1s, 14s;
     transform-origin: 60% 75%;
   }
   #jambe_droite{
-    animation-name: jambeDroiteBouge;
-    animation-duration: 1.5s;
-    animation-iteration-count: 12;
-    animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-name: jambeDroiteBouge, jambeDroiteBouge;
+    animation-duration: 1.5s, 1.5s;
+    animation-iteration-count: 3, 2;
+    animation-timing-function: linear, linear;
+    animation-delay: 1s, 14s;
     transform-origin: 48% 50%;
   }
 
@@ -222,9 +222,9 @@ main{
   @keyframes corpsAvance {
     0% {transform: translate(0);
         }
-    20% {transform: translate(300px,100px);
+    28% {transform: translate(300px,100px);
     }
-    80% {transform: translate(300px,100px);
+    82% {transform: translate(300px,100px);
     }
 
     100% {transform: translate(500px,100px);
