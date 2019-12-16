@@ -1,10 +1,15 @@
+.background{
+  overflow: hidden;
+  z-index:900;
+}
+
 html, body{
   background-color: #000000;
 }
 
 main{
   display: block;
-  width: 1280px;
+  width: 1200px;
   height: 720px;
   margin: 0 auto;
 }
@@ -23,6 +28,76 @@ main{
 
 #circlePlay:hover{
   opacity: 0.8;
+}
+
+.herbe-ete{
+  fill: #7FE376;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.herbe-ombre-ete{
+  fill: #55B56A;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.herbe-automne{
+  fill: #ADD459;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.herbe-ombre-automne{
+  fill: #98BA4E;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.herbe-hiver{
+  fill: #FFFFFF;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+.herbe-ombre-hiver{
+  fill: #E3E3E3;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.flocon path{
+  fill:#fff;
+}
+
+.flocon-wrapper{
+  position:absolute;
+  z-index:999;
+}
+
+@keyframes falling{
+  0%{
+    top:-50px;
+    opacity:1;
+  }
+  50%{
+    opacity:1;
+  }
+  80%{
+    opacity:0;
+  }
+  100%{
+    top:100%;
+    opacity:0;
+  }
+}
+
+.flocon{
+  width:100%;
+  height:100%;
 }
 
 .openLocker{
