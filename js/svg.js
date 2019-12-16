@@ -2,13 +2,13 @@ var flocon = '<svg id="e57924zkc2921" xmlns="http://www.w3.org/2000/svg" xmlns:x
 
 
 $(document).ready(function(){
-  initializeAudio();
+  initializeAudio(); //Création des sons
 
   $("#circlePlay").click(function(){
-    startScene();
+    startScene(); //Lancement de l'histoire
   });
 
-    saisons();
+    saisons(); //2ème scène
 });
 
 
@@ -97,6 +97,7 @@ function changeScene(){
 //Nouvelle Scene (Narnia)
 function startNarniaScene(){
   audioTransit.pause();
+  $("#schoolScene").hide();
 }
 
 //Scène guillaume
