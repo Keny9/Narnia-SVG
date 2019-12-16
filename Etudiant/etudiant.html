@@ -11,6 +11,7 @@
 
 
 <svg id="echpi45akzcb1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 480" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <g id="tout" transform="matrix(-0.78007646,0,0,0.71167209,414.04027,53.968786)">
   <g id="corps">
 
 
@@ -381,18 +382,29 @@
     stroke-width="0.180155"/>
   </g>
   </g>
+  </g>
   </svg>
 
   <style media="screen">
 
-    #corps{
-      animation-name: corpsAvance;
-      animation-duration: 7.5s;
-      animation-iteration-count: 1;
-      animation-timing-function: linear;
-      animation-delay: 1s;
-      transform-origin: 50px 50px;
-    }
+  #tout{
+    animation-name: corpsFlip;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    transform-origin: 0px 0px;
+    animation-fill-mode: forwards;
+  }
+
+      #corps{
+        animation-name: corpsAvance;
+        animation-duration: 7.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-delay: 1s;
+        transform-origin: 300px 100px;
+        animation-fill-mode: forwards;
+      }
 
       #etudiant_bras{
         animation-name: brasBouge;
@@ -418,20 +430,18 @@
         animation-delay: 1s;
         transform-origin: 48% 50%;
       }
-      #svgcontent{
-        animation-name: sauter;
-        animation-duration:4s;
-        animation-timing-function:linear;
-        animation-iteration-count: infinite;
 
-        width:600px;
-        height: 600px;
+      @keyframes corpsFlip {
+        100% {transform:matrix(-0.78007646,0,0,0.71167209);}
       }
 
       @keyframes corpsAvance {
-        0% {transform: translate(0);}
-        50% {transform: translate(-150px,50px);}
-        100% {transform: translate(-300px,100px);}
+        0% {transform: translate(0);
+            }
+        50% {transform: translate(150px,50px);
+        }
+        100% {transform: translate(300px,100px);
+        }
       }
 
       @keyframes brasBouge {
