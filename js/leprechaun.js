@@ -1,0 +1,8 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+  document.body.innerHTML += '<iframe style="top:300px; left:200px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="../Leprechaun/moyen-lutin-4.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>';
+  document.body.innerHTML += '<iframe style="top:330px; left:570px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="../Leprechaun/moyen-lutin-4.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>';
+  document.body.innerHTML += '<iframe style="top:260px; left:800px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="../Leprechaun/moyen-lutin-4.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>';
+  document.body.innerHTML += '<iframe style="top:200px; left:1100px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="../Leprechaun/moyen-lutin-4.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>';
+
+  document.body.innerHTML += '<iframe style="top:0px; left:1020px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="../Leprechaun/minuscule-lutin-3.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>';
+});
