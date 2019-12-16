@@ -114,8 +114,12 @@ function saisonHiver(){
   $("#herbe-ombre").toggleClass("herbe-ombre-hiver");
   $("#herbe-droite").toggleClass("herbe-hiver");
 
+  //Couleur ciel
+  $('#ciel').toggleClass("ciel-hiver");
 }
 
+
+//Créer un flocon
 function create_flocon(){
   var falling_time = Math.floor(Math.random() * 10) + 5 ;
   var flocon_pos = Math.floor(Math.random() * 90) + 4 ;
@@ -124,6 +128,7 @@ function create_flocon(){
   $(snow_flocon).appendTo('.background');
 }
 
+//Supprime un flocon
 function remove_flocon(){
   $(".flocon-wrapper").each(function(){
     var flocon_pos = $(this).offset().top;

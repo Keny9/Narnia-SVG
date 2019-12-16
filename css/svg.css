@@ -66,6 +66,12 @@ main{
 .ciel-ete{
   fill: #78BDFF ;
 }
+.ciel-hiver{
+  fill: #f9f9f9;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
 
 .flocon path{
   fill:#fff;
