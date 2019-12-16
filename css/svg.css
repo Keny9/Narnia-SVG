@@ -72,6 +72,20 @@ main{
   -webkit-transition: fill 4s linear;
   -moz-transition: fill 4s linear;
 }
+.ciel-nuit{
+  fill: #696969;
+  transition: fill 4s linear;
+  -webkit-transition: fill 4s linear;
+  -moz-transition: fill 4s linear;
+}
+
+.nuit{
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+  -webkit-filter: brightness(75%);
+  -moz-filter:  brightness(75%);
+}
+
 
 .flocon path{
   fill:#fff;
