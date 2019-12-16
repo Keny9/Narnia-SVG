@@ -127,6 +127,9 @@ function saisonAutomne(){
   $("#herbe").toggleClass("herbe-automne");
   $("#herbe-ombre").toggleClass("herbe-ombre-automne");
   $("#herbe-droite").toggleClass("herbe-automne");
+
+  //Changer la couleur des feuilles
+  $('#feuilles').toggleClass("feuilles-automne");
 }
 
 function saisonHiver(){
@@ -144,6 +147,8 @@ function saisonHiver(){
   //Couleur ciel
   $('#ciel').toggleClass("ciel-hiver");
 
+  //Changer la couleur des feuilles
+  $('#feuilles').toggleClass("feuilles-hiver");
 }
 
 function nuit(){
