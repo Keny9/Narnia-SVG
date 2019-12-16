@@ -8,6 +8,7 @@ $(document).ready(function(){
     startScene(); //Lancement de l'histoire
   });
 
+  // startNarniaScene(); //2ème scène
 
 });
 
@@ -126,6 +127,9 @@ function saisonAutomne(){
   $("#herbe").toggleClass("herbe-automne");
   $("#herbe-ombre").toggleClass("herbe-ombre-automne");
   $("#herbe-droite").toggleClass("herbe-automne");
+
+  //Changer la couleur des feuilles
+  $('#feuilles').toggleClass("feuilles-automne");
 }
 
 function saisonHiver(){
@@ -143,19 +147,23 @@ function saisonHiver(){
   //Changer couleur montagnes
   $('.mont-pale').each(function() {
     $(this).toggleClass("montagne-hiver-pale");
-});
-$('.mont-fonce').each(function() {
-  $(this).toggleClass("montagne-hiver-fonce");
-});
-$('.mont-mid').each(function() {
-  $(this).toggleClass("montagne-hiver-mid");
-});
+  });
+  $('.mont-fonce').each(function() {
+    $(this).toggleClass("montagne-hiver-fonce");
+  });
+  $('.mont-mid').each(function() {
+    $(this).toggleClass("montagne-hiver-mid");
+  });
+
+  //Changer la couleur des feuilles
+  $('#feuilles').toggleClass("feuilles-hiver");
 
   //Couleur ciel
   $('#ciel').toggleClass("ciel-hiver");
 
 }
 
+//Mettre un effet nuit
 function nuit(){
   $("#paysage").toggleClass("nuit");
   $("#main").toggleClass("nuit");
