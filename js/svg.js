@@ -17,6 +17,7 @@ function initializeAudio(){
   //Son ambient dans l'école
   audioSchool = document.createElement("audio");
   document.body.appendChild(audioSchool);
+  //Son ecole
   audioSchool.src = "./sound/ambient-school.mp3";
 
   //Son pour le mouvement su casier BANG
