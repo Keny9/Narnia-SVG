@@ -90,6 +90,9 @@ function saisonEte(){
   $("#herbe").toggleClass("herbe-ete");
   $("#herbe-ombre").toggleClass("herbe-ombre-ete");
   $("#herbe-droite").toggleClass("herbe-ete");
+
+  //Couleur ciel
+  $("#ciel").toggleClass("ciel-ete");
 }
 
 function saisonAutomne(){

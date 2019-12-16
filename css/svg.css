@@ -31,16 +31,10 @@ main{
 }
 
 .herbe-ete{
-  fill: #7FE376;
-  transition: fill 4s linear;
-  -webkit-transition: fill 4s linear;
-  -moz-transition: fill 4s linear;
+  fill: #7FCC76;
 }
 .herbe-ombre-ete{
   fill: #55B56A;
-  transition: fill 4s linear;
-  -webkit-transition: fill 4s linear;
-  -moz-transition: fill 4s linear;
 }
 
 .herbe-automne{
@@ -67,6 +61,10 @@ main{
   transition: fill 4s linear;
   -webkit-transition: fill 4s linear;
   -moz-transition: fill 4s linear;
+}
+
+.ciel-ete{
+  fill: #78BDFF ;
 }
 
 .flocon path{
@@ -105,11 +103,6 @@ main{
   transform: translate(80px,-35px);
 }
 
-.endSchoolScene{
-  opacity: 0;
-  animation: endSchool 2s ease;
-}
-
 @keyframes move {
   25% {
      transform: translate(10px, 10px);
@@ -125,14 +118,5 @@ main{
   }
   50% {
     transform: translate(80px,-35px);
-  }
-}
-
-@keyframes endSchool {
-  0%{
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
