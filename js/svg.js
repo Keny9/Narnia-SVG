@@ -41,6 +41,10 @@ function initializeAudio(){
   audioScared = document.createElement("audio");
   document.body.appendChild(audioScared);
   audioScared.src = "./sound/male-scared-gasp.mp3";
+
+  audioNoel = document.createElement("audio");
+  document.body.appendChild(audioNoel);
+  audioNoel.src = "./sound/noel.mp3";
 }
 
 //Commencer la story
@@ -163,6 +167,9 @@ function saisonHiver(){
 
   //Couleur ciel
   $('#ciel').toggleClass("ciel-hiver");
+
+  //Musique de noel pour l'hiver
+  audioNoel.play();
 
 }
 
