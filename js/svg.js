@@ -42,9 +42,15 @@ function initializeAudio(){
   document.body.appendChild(audioScared);
   audioScared.src = "./sound/male-scared-gasp.mp3";
 
+  //Son de noel
   audioNoel = document.createElement("audio");
   document.body.appendChild(audioNoel);
   audioNoel.src = "./sound/noel.mp3";
+
+  //Son huh
+  audioHuh = document.createElement("audio");
+  document.body.appendChild(audioHuh);
+  audioHuh.src = "./sound/huh.wav";
 }
 
 //Commencer la story
@@ -66,6 +72,7 @@ function livingLocker(){
 //Le casier arrete son mouvement
 function dieLocker(){
   audio.pause();
+  audioHuh.play();
   $("#locker2").removeClass("living-locker");
   setTimeout(openLocker, 5000);
 }
