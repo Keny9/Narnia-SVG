@@ -82,7 +82,7 @@ function saisons(){
   saisonEte();
   setTimeout(saisonAutomne, 2000);
   setTimeout(saisonHiver, 7000);
-
+  setTimeout(nuit, 12000);
 }
 
 function saisonEte(){
@@ -116,6 +116,14 @@ function saisonHiver(){
 
   //Couleur ciel
   $('#ciel').toggleClass("ciel-hiver");
+
+}
+
+function nuit(){
+  $("#paysage").toggleClass("nuit");
+  $("#main").toggleClass("nuit");
+  $("#ciel").toggleClass("ciel-nuit");
+
 }
 
 
