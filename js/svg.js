@@ -54,7 +54,6 @@ function initializeAudio(){
   var nuitAudio = new Audio('Leprechaun/nuit.mp3');
   //Musique jour
   var jourAudio = new Audio('Leprechaun/jour.mp3');
-
 }
 
 //Commencer la story
@@ -122,8 +121,11 @@ function startNarniaScene(){
 
 
   var main = document.getElementById('main');
+  var mirror = "-moz-transform: scale(-1, 1);-webkit-transform: scale(-1, 1);-o-transform: scale(-1, 1);-ms-transform: scale(-1, 1);transform: scale(-1, 1);";
   main.innerHTML += '<iframe style="top:0px; left:0px;position:absolute;width:2000px;height:100%;max-height:500px;max-width:2000px;border: none;" src="./soleil/soleil.html" <!--onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"-->></iframe>';
   main.innerHTML += '<iframe id="majoralune" style="opacity:0;top:0px; left:0px;position:absolute;width:2000px;height:100%;max-height:500px;max-width:2000px;border: none;" src="./soleil/lune.html" <!--onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"-->></iframe>';
+  main.innerHTML += '<iframe style="'+mirror+'top:300px; left:280px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="./Leprechaun/moyen-lutin-4.html" <!--onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"-->></iframe>';
+
   jourAudio = new Audio('./Leprechaun/jour.mp3');
   jourAudio.play();
 
