@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
-  var mirror = "-moz-transform: scale(-1, 1);-webkit-transform: scale(-1, 1);-o-transform: scale(-1, 1);-ms-transform: scale(-1, 1);transform: scale(-1, 1);"
+  var mirror = "-moz-transform: scale(-1, 1);-webkit-transform: scale(-1, 1);-o-transform: scale(-1, 1);-ms-transform: scale(-1, 1);transform: scale(-1, 1);";
   var main = document.getElementById('main');
   main.innerHTML += '<iframe style="top:300px; left:80px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="../Leprechaun/moyen-lutin-4.html" <!--onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"-->></iframe>';
   main.innerHTML += '<iframe style="top:330px; left:300px;position:absolute;width:100%;height:100%;max-width: 400px;max-height: 400px;border: none;" src="../Leprechaun/moyen-lutin-4.html" <!--onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"-->></iframe>';
@@ -30,7 +30,6 @@ window.addEventListener('DOMContentLoaded', function() {
   }*/
   main.innerHTML += '<iframe src="../Leprechaun/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>;';
   main.innerHTML += '<audio id="player" autoplay><source src="../Leprechaun/jour.mp3" type="audio/mp3"></audio>';
-  setTimeout
 
   var nuitAudio = new Audio('../Leprechaun/nuit.mp3');
   setTimeout(function(){
