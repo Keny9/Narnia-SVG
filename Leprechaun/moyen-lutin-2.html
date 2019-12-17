@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -6,7 +6,7 @@
 
 
   </head>
-  <body>
+  <body> -->
 
     <svg id="svgcontent" x="1137.7777777777765" y="853.3333333333323" overflow="visible" xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 480">
       <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
@@ -57,82 +57,92 @@
 
         <path id="lutin_sacoche" fill="#ff00ff" stroke="#000000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="M245.87420916740993,289.39455652803963 C245.87420916740993,289.39455652803963 247.45624046927296,314.07424483710287 247.42968750000023,313.7695312500003 C247.4031345307275,313.4648176628977 265.4913973105114,315.3398698785933 265.17499105013883,315.3398698785933 C264.85858478976627,315.3398698785933 273.4015538198266,323.88283890865364 273.4015538198266,323.88283890865364 C273.4015538198266,323.88283890865364 274.0343663405718,348.8789334780895 274.0343663405718,348.8789334780895 C274.0343663405718,348.8789334780895 256.6320220200785,367.23049657970057 256.6054687500002,366.92578125000034 C256.57891547992193,366.6210659203001 230.37030240915226,367.5469028400732 230.3437500000002,367.24218750000034 C230.31719759084814,366.9374721599275 212.01873930754115,349.8281522592073 211.9921875000002,349.52343750000034 C211.96563569245924,349.21872274079345 211.38592678679595,323.88283890865364 211.3593750000002,323.5781250000003 C211.33282321320445,323.27341109134693 221.82733337909193,314.3906510974755 221.8007812500002,314.0859375000003 C221.77422912090847,313.7812239025251 237.64764639772218,315.02346361822066 237.64764639772218,315.02346361822066 C237.64764639772218,315.02346361822066 238.91327143921262,288.7617440072944 238.88671875000023,288.4570312500003 C238.86016606078783,288.1523184927062 245.87420916740993,289.39455652803963 245.87420916740993,289.39455652803963 z"  fill-opacity="1" stroke-opacity="1"></path>
       </g>
+
+      <style media="screen">
+      html{
+        position:absolute;
+        top:15%;
+      }
+        #lutin_bras, #lutin_main, #lutin_sacoche{
+          animation-name: brasBouge;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          animation-delay: 1s;
+          transform-origin: 45% 50%;
+        }
+        #lutin_sourcil_1{
+          animation-name: clinOeil;
+          animation-duration:5s;
+          animation-timing-function:linear;
+          animation-iteration-count: infinite;
+
+        }
+        #genou_1, #genou_2, #soulier_bouton_1, #soulier_bouton_2{
+          animation-name: plierGenou;
+          animation-duration:5s;
+          animation-delay:1s;
+          animation-timing-function:linear;
+          animation-iteration-count: infinite;
+          transform-origin:100% 65%;
+        }
+        #svgcontent{
+          animation-name: sauter;
+          animation-duration:5s;
+          animation-delay:1s;
+          animation-timing-function:linear;
+          animation-iteration-count: infinite;
+          transform-origin: center;
+          width:300px;
+          height: 300px;
+        }
+
+        @keyframes brasBouge {
+          0% {transform: rotate(0);}
+          50% {transform: rotate(50deg);}
+          100% {transform: rotate(0);}
+        }
+        @keyframes clinOeil{
+          /*0%, 80% {transform: translateY(0);}
+          90%, 95% {transform: translateY(10px);}
+          100% {transform: translateY(0);}*/
+          0%,5% {transform: translateY(0);}
+          10%, 15% {transform: translateY(10px);}
+          20%, 100% {transform: translateY(0);}
+        }
+        @keyframes plierGenou{
+          0% {transform: scaleY(1);}
+          8% {transform: scaleY(0.5);}
+          16% {transform: scaleY(0.5);}
+          20%, 52% {transform: scaleY(1);}
+
+          56%, 64% {transform: scaleY(0.6);}
+          75%, 100% {transform: scaleY(1);}
+        }
+        @keyframes sauter{
+          0% {transform: translateY(0) rotate(0deg);}
+          8% {transform: translateY(15px) rotate(0deg);}
+          16% {transform: translateY(15px) rotate(0deg);}
+          20% {transform: translateY(0) rotate(0deg);}
+
+          25% {transform: translateY(-56px) rotate(0deg);}
+          28% {transform: translateY(-85px) rotate(49deg);}
+          36% {transform: translateY(-100px) rotate(180deg);}
+          44% {transform: translateY(-100px) rotate(311deg);}
+          47% {transform: translateY(-62px) rotate(360deg);}
+
+          52% {transform: translateY(0) rotate(360deg);}
+
+          56%, 64% {transform: translateY(12px)rotate(360deg);}
+          75%, 100%  {transform: translateY(0)rotate(360deg);}
+        }
+
+      </style>
     </svg>
 
-    <style media="screen">
-      #lutin_bras, #lutin_main, #lutin_sacoche{
-        animation-name: brasBouge;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-delay: 1s;
-        transform-origin: 45% 50%;
-      }
-      #lutin_sourcil_1{
-        animation-name: clinOeil;
-        animation-duration:3s;
-        animation-timing-function:linear;
-        animation-iteration-count: infinite;
 
-      }
-      #genou_1, #genou_2, #soulier_bouton_1, #soulier_bouton_2{
-        animation-name: plierGenou;
-        animation-duration:5s;
-        animation-timing-function:linear;
-        animation-iteration-count: infinite;
-        transform-origin:100% 65%;
-      }
-      #svgcontent{
-        animation-name: sauter;
-        animation-duration:5s;
-        animation-timing-function:linear;
-        animation-iteration-count: infinite;
-        transform-origin: center;
-        width:300px;
-        height: 300px;
-      }
-
-      @keyframes brasBouge {
-        0% {transform: rotate(0);}
-        50% {transform: rotate(50deg);}
-        100% {transform: rotate(0);}
-      }
-      @keyframes clinOeil{
-        0% {transform: translateY(0);}
-        10%, 15% {transform: translateY(10px);}
-        25% {transform: translateY(0);}
-        100% {transform: translateY(0);}
-      }
-      @keyframes plierGenou{
-        0% {transform: scaleY(1);}
-        8% {transform: scaleY(0.5);}
-        16% {transform: scaleY(0.5);}
-        20%, 52% {transform: scaleY(1);}
-
-        56%, 64% {transform: scaleY(0.6);}
-        80%, 100% {transform: scaleY(1);}
-      }
-      @keyframes sauter{
-        0% {transform: translateY(0) rotate(0deg);}
-        8% {transform: translateY(15px) rotate(0deg);}
-        16% {transform: translateY(15px) rotate(0deg);}
-        20% {transform: translateY(0) rotate(0deg);}
-
-        25% {transform: translateY(-56px) rotate(0deg);}
-        28% {transform: translateY(-85px) rotate(49deg);}
-        36% {transform: translateY(-100px) rotate(180deg);}
-        44% {transform: translateY(-100px) rotate(311deg);}
-        47% {transform: translateY(-62px) rotate(360deg);}
-
-        52% {transform: translateY(0) rotate(360deg);}
-
-        56%, 64% {transform: translateY(12px)rotate(360deg);}
-        80%, 100%  {transform: translateY(0)rotate(360deg);}
-      }
-
-    </style>
-    <script>
+    <!-- <script>
 
     </script>
   </body>
-</html>
+</html> -->

@@ -1,0 +1,329 @@
+.lutin_vert{
+  animation-name: darkenVert;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+  /* animation-delay: 1s;
+  transform-origin: 45% 50%; */
+}
+
+.lutin_beige{
+  animation-name: darkenBeige;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+}
+
+.lutin_orange{
+  animation-name: darkenOrange;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+}
+
+#lutin_bras{
+  animation-name: brasBouge, darkenVert;
+  animation-duration: 2s, 4s;
+  animation-iteration-count: infinite, 1;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s, 13s;
+  transform-origin: 45% 50%;
+}
+
+#lutin_main{
+  animation-name: brasBouge, darkenBeige;
+  animation-duration: 2s, 4s;
+  animation-iteration-count: infinite, 1;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s, 13s;
+  transform-origin: 45% 50%;
+}
+
+#lutin_sacoche{
+  animation-name: brasBouge, disappear;
+  animation-duration: 2s, 1s;
+  animation-iteration-count: infinite, 1;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s, 16s;
+  transform-origin: 45% 50%;
+}
+
+#epe{
+  transform: translate(-35px, 128px);
+}
+
+.lutin_epe{
+  opacity:0;
+  animation-name: brasBouge, appear;
+  animation-duration: 2s, 4s;
+  animation-iteration-count: infinite, 1;
+  animation-timing-function: linear, linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1s, 15s;
+  transform-origin: 50% 23%;
+}
+
+#lutin_sourcil_1{
+  animation-name: clinOeil, disappear;
+  animation-duration:5s, 4s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite, 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s, 14s;
+}
+
+#lutin_sourcil_2{
+  animation-name: disappear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 14s;
+}
+
+#genou_1, #genou_2{
+  animation-name: plierGenou, darkenVert;
+  animation-duration:5s, 4s;
+  animation-delay:1s, 13s;
+  animation-timing-function:linear, linear;
+  animation-iteration-count: infinite, 1;
+  animation-fill-mode: forwards;
+  transform-origin:100% 65%;
+}
+
+#soulier_bouton_1, #soulier_bouton_2{
+  animation-name: plierGenou;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin:100% 65%;
+}
+
+#svgcontent{
+  animation-name: sauter;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  width:300px;
+  height: 300px;
+}
+
+#lutin1{
+  position: absolute;
+  top:300px;
+  left:200px;
+  animation-name: sauter;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  width:300px;
+  height: 300px;
+}
+
+#lutin2{
+  position: absolute;
+  top:330px;
+  left:570px;
+  animation-name: sauter;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  width:300px;
+  height: 300px;
+}
+
+#lutin3{
+  position: absolute;
+  top:360px;
+  left:800px;
+  animation-name: sauter;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  width:300px;
+  height: 300px;
+}
+
+#lutin4{
+  position: absolute;
+  top:200px;
+  left:1000px;
+  animation-name: sauter;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  width:300px;
+  height: 300px;
+}
+
+#petitLutin1{
+  position: absolute;
+  top:50px;
+  left:850px;
+  animation-name: sauter;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+  transform-origin: center;
+  width:150px;
+  height: 150px;
+}
+
+#lutin_oeil_1, #lutin_oeil_2{
+  animation-name: darkenEyes;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 14s;
+}
+
+#lutin_blanc_oeil_1, #lutin_blanc_oeil_2{
+  animation-name: disappear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 14s;
+}
+
+#lutin_corne_2, #lutin_corne_1{
+  opacity:0;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 15s;
+}
+
+.feu{
+  opacity:0;
+  animation-name: flamefly, appear;
+  animation-duration: 1s, 1s;
+  animation-iteration-count: infinite, 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 17s, 17s;
+  transform-origin: 45% 50%;
+}
+
+.flame.one {
+  animation-duration: 3s;
+}
+
+.flame3.two{
+  animation-duration: 5s;
+}
+
+.flame-main.one {
+  animation-duration: 2s;
+}
+
+.flame-main.two {
+  animation-duration: 1s;
+}
+
+.flame-main.three {
+  animation-duration: 2.1s;
+}
+
+.flame-main.four {
+  animation-duration: 3.2s;
+}
+
+.flame-main.five {
+  animation-duration: 2.5s;
+}
+
+@keyframes flamefly {
+  0%{transform: translate(77px, 50px) rotate(88deg) scale(0.5, -1.5);}
+  25%{transform: translate(77px, 50px)  rotate(84deg) scale(0.5, -1.5); }
+  50% {transform: translate(77px, 50px)  rotate(88deg) scale(0.5, -1.5);}
+  75% {transform: translate(77px, 50px)  rotate(91deg) scale(0.5, -1.5);}
+  100% {transform: translate(77px, 50px)  rotate(88deg) scale(0.5, -1.5); }
+}
+
+@keyframes brasBouge {
+  0% {transform: rotate(0);}
+  50% {transform: rotate(50deg);}
+  100% {transform: rotate(0);}
+}
+@keyframes darkenVert{
+  0% {fill: #007f00;}
+  100% {fill: #003300;}
+}
+@keyframes darkenBeige{
+  0% {fill:#ffffaa;}
+  100% {fill:#737561};
+}
+@keyframes darkenOrange{
+  0% {fill:#ff7f00;}
+  100% {fill:#613000};
+}
+@keyframes darkenEyes{
+  0% {fill: #007f00;width: 8px;height:8px;}
+  100% {fill: #fb0404;width: 15px; height:15px;transform: translateX(-7px) translateY(-7px);}
+}
+@keyframes clinOeil{
+  /*0%, 80% {transform: translateY(0);}
+  90%, 95% {transform: translateY(10px);}
+  100% {transform: translateY(0);}*/
+  0%,5% {transform: translateY(0);}
+  10%, 15% {transform: translateY(10px);}
+  20%, 100% {transform: translateY(0);}
+}
+@keyframes plierGenou{
+  0% {transform: scaleY(1);}
+  8% {transform: scaleY(0.5);}
+  16% {transform: scaleY(0.5);}
+  20%, 52% {transform: scaleY(1);}
+
+  56%, 64% {transform: scaleY(0.6);}
+  75%, 100% {transform: scaleY(1);}
+}
+@keyframes sauter{
+  0% {transform: translateY(0) rotate(0deg);}
+  8% {transform: translateY(15px) rotate(0deg);}
+  16% {transform: translateY(15px) rotate(0deg);}
+  20% {transform: translateY(0) rotate(0deg);}
+
+  25% {transform: translateY(-56px) rotate(0deg);}
+  28% {transform: translateY(-85px) rotate(49deg);}
+  36% {transform: translateY(-100px) rotate(180deg);}
+  44% {transform: translateY(-100px) rotate(311deg);}
+  47% {transform: translateY(-62px) rotate(360deg);}
+
+  52% {transform: translateY(0) rotate(360deg);}
+
+  56%, 64% {transform: translateY(12px)rotate(360deg);}
+  75%, 100%  {transform: translateY(0)rotate(360deg);}
+}
+@keyframes disappear{
+  100%{opacity:0;}
+}
+@keyframes appear{
+  0%,75%{opacity:0;}
+  100%{opacity:1;}
+}
