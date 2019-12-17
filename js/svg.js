@@ -9,7 +9,6 @@ $(document).ready(function(){
 
 });
 
-
 //Initialiser le son
 function initializeAudio(){
   //Son ambient dans l'école
@@ -186,8 +185,10 @@ function nuit(){
   $("#paysage").toggleClass("nuit");
   $("#ciel").toggleClass("ciel-nuit");
 
+  setTimeout(function(){
+    flocon = '<img style="max-width: 100%;max-height:50px;" src="Leprechaun/meteor.svg">';
+  }, 3000);
 }
-
 
 //Créer un flocon
 function create_flocon(){
