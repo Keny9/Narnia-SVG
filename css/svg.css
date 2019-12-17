@@ -241,7 +241,7 @@ main{
     animation-iteration-count: 3, 2;
     animation-timing-function: linear, linear;
     animation-delay: 1s, 14s;
-    transform-origin: 48% 35%;
+    transform-origin: 52% 40%;
   }
   #jambe_gauche{
     animation-name: jambeBouge, jambeBouge;
