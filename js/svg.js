@@ -185,11 +185,10 @@ function nuit(){
   $("#paysage").toggleClass("nuit");
   $("#ciel").toggleClass("ciel-nuit");
 
-
+  setTimeout(function(){
+    flocon = '<img style="max-width: 100%;max-height:50px;" src="Leprechaun/meteor.png">';
+  }, 3000);
 }
-setTimeout(function(){
-  flocon = '<img style="max-width: 100%;max-height:50px;"src="../Leprechaun/meteor.png">';
-}, 15000);
 
 //Créer un flocon
 function create_flocon(){
