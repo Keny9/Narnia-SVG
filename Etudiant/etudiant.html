@@ -12,7 +12,7 @@
 
 <svg id="echpi45akzcb1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 640 480" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
   <g id="tout" transform="matrix(-0.78007646,0,0,0.71167209,414.04027,53.968786)">
-  <g id="corps">
+  <g id="corps" class="etudiant">
 
 
     <path
@@ -385,82 +385,6 @@
   </g>
   </svg>
 
-  <style media="screen">
-
-  #tout{
-    animation-name: corpsFlip;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    transform-origin: 0px 0px;
-    animation-fill-mode: forwards;
-  }
-
-      #corps{
-        animation-name: corpsAvance;
-        animation-duration: 7.5s;
-        animation-iteration-count: 1;
-        animation-timing-function: linear;
-        animation-delay: 1s;
-        transform-origin: 300px 100px;
-        animation-fill-mode: forwards;
-      }
-
-      #etudiant_bras{
-        animation-name: brasBouge;
-        animation-duration: 1.5s;
-        animation-iteration-count: 5;
-        animation-timing-function: linear;
-        animation-delay: 1s;
-        transform-origin: 48% 35%;
-      }
-      #jambe_gauche{
-        animation-name: jambeBouge;
-        animation-duration: 1.5s;
-        animation-iteration-count: 5;
-        animation-timing-function: linear;
-        animation-delay: 1s;
-        transform-origin: 60% 75%;
-      }
-      #jambe_droite{
-        animation-name: jambeDroiteBouge;
-        animation-duration: 1.5s;
-        animation-iteration-count: 5;
-        animation-timing-function: linear;
-        animation-delay: 1s;
-        transform-origin: 48% 50%;
-      }
-
-      @keyframes corpsFlip {
-        100% {transform:matrix(-0.78007646,0,0,0.71167209);}
-      }
-
-      @keyframes corpsAvance {
-        0% {transform: translate(0);
-            }
-        50% {transform: translate(150px,50px);
-        }
-        100% {transform: translate(300px,100px);
-        }
-      }
-
-      @keyframes brasBouge {
-        0% {transform: rotate(0);}
-        50% {transform: rotate(10deg);}
-        100% {transform: rotate(0);}
-      }
-      @keyframes jambeBouge {
-        0% {transform: rotate(0);}
-        50% {transform: rotate(5deg);}
-        100% {transform: rotate(0);}
-      }
-      @keyframes jambeDroiteBouge {
-        0% {transform: rotate(0);}
-        50% {transform: rotate(5deg);}
-        100% {transform: rotate(0);}
-      }
-
-    </style>
     <script>
 
     </script>

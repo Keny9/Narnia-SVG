@@ -1,4 +1,5 @@
 .background{
+  display: none;
   overflow: hidden;
   z-index:900;
 }
@@ -112,12 +113,30 @@ main{
   -moz-transition: fill 4s linear;
 }
 
+.feuilles-hiver{
+  opacity: 0;
+  transition: all 4s linear;
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+}
+.feuilles-automne{
+  fill: #FCD97B;
+  transition: all 4s linear;
+  -webkit-transition: all 4s linear;
+  -moz-transition: all 4s linear;
+}
+
 
 .flocon path{
   fill:#fff;
 }
 
 .flocon-wrapper{
+  position:absolute;
+  z-index:999;
+}
+
+.lutin-wrapper{
   position:absolute;
   z-index:999;
 }
@@ -154,6 +173,11 @@ main{
   animation: endSchool 2s ease;
 }
 
+.startNarniaScene{
+  opacity: 1;
+  animation: startNarnia 2s ease;
+}
+
 @keyframes move {
   25% {
      transform: translate(10px, 10px);
@@ -181,6 +205,15 @@ main{
   }
 }
 
+@keyframes startNarnia {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 /*************CSS DU PERSONNAGE **************************/
 #tout{
@@ -194,36 +227,36 @@ main{
 
   #corps{
     animation-name: corpsAvance;
-    animation-duration: 7.5s;
+    animation-duration: 16s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-delay: 1s;
-    transform-origin: 300px 100px;
+    transform-origin: 500px 100px;
     animation-fill-mode: forwards;
   }
 
   #etudiant_bras{
-    animation-name: brasBouge;
-    animation-duration: 1.5s;
-    animation-iteration-count: 5;
-    animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-name: brasBouge, brasBouge;
+    animation-duration: 1.5s, 1.5s;
+    animation-iteration-count: 3, 2;
+    animation-timing-function: linear, linear;
+    animation-delay: 1s, 14s;
     transform-origin: 48% 35%;
   }
   #jambe_gauche{
-    animation-name: jambeBouge;
-    animation-duration: 1.5s;
-    animation-iteration-count: 5;
-    animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-name: jambeBouge, jambeBouge;
+    animation-duration: 1.5s, 1.5s;
+    animation-iteration-count: 3, 2;
+    animation-timing-function: linear, linear;
+    animation-delay: 1s, 14s;
     transform-origin: 60% 75%;
   }
   #jambe_droite{
-    animation-name: jambeDroiteBouge;
-    animation-duration: 1.5s;
-    animation-iteration-count: 5;
-    animation-timing-function: linear;
-    animation-delay: 1s;
+    animation-name: jambeDroiteBouge, jambeDroiteBouge;
+    animation-duration: 1.5s, 1.5s;
+    animation-iteration-count: 3, 2;
+    animation-timing-function: linear, linear;
+    animation-delay: 1s, 14s;
     transform-origin: 48% 50%;
   }
 
@@ -234,9 +267,12 @@ main{
   @keyframes corpsAvance {
     0% {transform: translate(0);
         }
-    50% {transform: translate(150px,50px);
+    28% {transform: translate(300px,100px);
     }
-    100% {transform: translate(300px,100px);
+    82% {transform: translate(300px,100px);
+    }
+
+    100% {transform: translate(500px,100px);
     }
   }
 
