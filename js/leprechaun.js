@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
   },15666);
 
 
-  var jourAudio = new Audio('../Leprechaun/jour.mp3');
+  /*var jourAudio = new Audio('../Leprechaun/jour.mp3');
   jourAudio.pause();
   jourAudio.play();
   main.innerHTML += '<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>';//'<iframe src="../Leprechaun/jour.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> ';
@@ -27,16 +27,17 @@ window.addEventListener('DOMContentLoaded', function() {
   }
   else{
     $('#playAudio').remove() //just to make sure that it will not have 2x audio in the background
-  }
+  }*/
+  main.innerHTML += '<iframe src="../Leprechaun/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>;';
+  main.innerHTML += '<audio id="player" autoplay><source src="../Leprechaun/jour.mp3" type="audio/mp3"></audio>';
+  setTimeout
 
   var nuitAudio = new Audio('../Leprechaun/nuit.mp3');
   setTimeout(function(){
     nuitAudio.play();
   }, 15000);
 
-  setTimeout(function(){
-    nuitAudio.play();
-  }, 15000);
+
 });
-var jourAudio = new Audio('../Leprechaun/jour.mp3');
-jourAudio.play();
+/*var jourAudio = new Audio('../Leprechaun/jour.mp3');
+jourAudio.play();*/
