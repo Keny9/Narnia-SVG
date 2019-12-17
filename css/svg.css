@@ -129,6 +129,11 @@ main{
   z-index:999;
 }
 
+.lutin-wrapper{
+  position:absolute;
+  z-index:999;
+}
+
 @keyframes falling{
   0%{
     top:-50px;
