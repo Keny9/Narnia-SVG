@@ -49,6 +49,12 @@ function initializeAudio(){
   audioHuh = document.createElement("audio");
   document.body.appendChild(audioHuh);
   audioHuh.src = "./sound/huh.wav";
+
+  //Musique nuit
+  var nuitAudio = new Audio('Leprechaun/nuit.mp3');
+  //Musique jour
+  var jourAudio = new Audio('Leprechaun/jour.mp3');
+
 }
 
 //Commencer la story
@@ -187,6 +193,7 @@ function nuit(){
 
   setTimeout(function(){
     flocon = '<img style="max-width: 100%;max-height:50px;" src="Leprechaun/meteor.svg">';
+    nuitAudio.play();
   }, 3000);
 }
 
