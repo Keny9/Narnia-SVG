@@ -49,6 +49,12 @@ function initializeAudio(){
   audioHuh = document.createElement("audio");
   document.body.appendChild(audioHuh);
   audioHuh.src = "./sound/huh.wav";
+
+  //Musique nuit
+  var nuitAudio = new Audio('Leprechaun/nuit.mp3');
+  //Musique jour
+  var jourAudio = new Audio('Leprechaun/jour.mp3');
+
 }
 
 //Commencer la story
@@ -113,6 +119,22 @@ function startNarniaScene(){
   $("#main").addClass("startNarniaScene");
   $("#main").show();
   saisons(); //2ème scène
+
+
+  var main = document.getElementById('main');
+  main.innerHTML += '<iframe style="top:0px; left:0px;position:absolute;width:2000px;height:100%;max-height:500px;max-width:2000px;border: none;" src="./soleil/soleil.html" <!--onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"-->></iframe>';
+  main.innerHTML += '<iframe id="majoralune" style="opacity:0;top:0px; left:0px;position:absolute;width:2000px;height:100%;max-height:500px;max-width:2000px;border: none;" src="./soleil/lune.html" <!--onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"-->></iframe>';
+  jourAudio = new Audio('./Leprechaun/jour.mp3');
+  jourAudio.play();
+
+  var nuitAudio = new Audio('./Leprechaun/nuit.mp3');
+  setTimeout(function(){
+    nuitAudio.play();
+  }, 15000);
+
+  setTimeout(function(){
+    document.getElementById('majoralune').style.opacity="1";
+  },15666);
 }
 
 //Scène guillaume
@@ -176,7 +198,7 @@ function saisonHiver(){
   $('#ciel').toggleClass("ciel-hiver");
 
   //Musique de noel pour l'hiver
-  audioNoel.play();
+//  audioNoel.play();
 
 }
 
@@ -187,6 +209,7 @@ function nuit(){
 
   setTimeout(function(){
     flocon = '<img style="max-width: 100%;max-height:50px;" src="Leprechaun/meteor.svg">';
+  //  nuitAudio.play();
   }, 3000);
 }
 
