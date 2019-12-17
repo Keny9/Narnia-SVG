@@ -186,7 +186,7 @@ function nuit(){
   $("#ciel").toggleClass("ciel-nuit");
 
   setTimeout(function(){
-    flocon = '<img style="max-width: 100%;max-height:50px;" src="Leprechaun/meteor.png">';
+    flocon = '<img style="max-width: 100%;max-height:50px;" src="Leprechaun/meteor.svg">';
   }, 3000);
 }
 
